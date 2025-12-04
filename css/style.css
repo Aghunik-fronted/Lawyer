@@ -1,0 +1,63 @@
+body {
+    margin: 0 auto;
+}
+.header {
+    background: url(../images/Rectangle\ 3.png);
+    display: flex;
+    max-width: 1920px;
+    min-height: 820px;
+    margin: 0 auto;
+}
+.contacts {
+    background: #010101;
+    max-height: 52px;
+    height: 100%;
+    min-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex: 1s;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 1px;
+}
+.phone {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.phone img {
+    margin-right: 8px;
+}
+.email-to {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 863px;
+}
+.email-to img {
+    margin-right: 8px;
+}
+.calling-to {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4f8ff0;
+    text-decoration: none;
+    margin-right: 300px;
+}
