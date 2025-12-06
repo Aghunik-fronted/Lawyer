@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    background-color: #f7f7f7;
 }
 .header {
     background: url(../images/Rectangle\ 3.png);
@@ -186,7 +187,7 @@ span {
     max-height: 84px;
     height: 100%;
     text-align: center;
-    /* padding: 10px 0; */
+    padding: 10px 0;
 }
 .text-item {
     font-family: "Nunito Sans", sans-serif;
@@ -197,7 +198,7 @@ span {
     margin-top: 90px;
 }
 .service-row {
-    font-family: "Nunito Sans", sans-serifs;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 900;
     font-size: 14px;
     line-height: 120%;
@@ -224,4 +225,98 @@ span {
 .icon-item {
     margin-left: 7px;
     margin-right: 1222.97px;
+}
+.container-row {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+}
+.services-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 920px;
+    max-height: 117px;
+
+}
+.servises-item-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 10px;
+}
+hr {
+    border: 3px solid #4f8ff0;
+    width: 50px;
+}
+.servises-item-desc {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #222;
+    display: flex;
+    margin: 24px;
+    min-width: 920px;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.adventages {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 48px auto;
+    padding: 0;
+}
+.adventages-item {
+    display: flex; 
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin: 48px auto;
+    gap: 24px;
+    padding: 0;
+}
+.adventages-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 424px;
+    max-height: 250px;
+    background: #fff;
+}
+.adventages-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 412px;
+    max-height: 250px;
+    background: #fff;
+}
+.adventages-item-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #222;
+}
+.adventages-item-desc {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #222;
 }
