@@ -206,6 +206,7 @@ span {
     height: 100%;
     text-align: center;
     padding: 10px 0;
+    box-sizing: border-box;
 }
 .text-item {
     font-family: "Nunito Sans", sans-serif;
@@ -213,7 +214,7 @@ span {
     line-height: 120%;
     text-align: center;
     color: #fff; 
-    margin-top: 90px;
+    margin-top: 22px;
 }
 .service-row {
     font-family: "Nunito Sans", sans-serif;
@@ -230,8 +231,13 @@ span {
     background-color:  #4f8ff0;
     display: flex;
     justify-content: center;
-   align-items: center;
-   margin-left: 5px;
+    align-items: center;
+    margin-left: 25px;
+}
+.services>.service-row:hover {
+    background-color: #fff;
+    border: 1px solid #4f8ff0;
+    color: #4f8ff0;
 }
 .icons {
     max-width: 1320px;
@@ -272,8 +278,8 @@ hr {
 }
 .servises-item-desc {
     font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
     font-size: 16px;
+    text-transform: none;
     line-height: 120%;
     text-align: center;
     color: #222;
@@ -313,7 +319,7 @@ hr {
     text-align: center;
     max-width: 424px;
     width: 100%;
-    min-height: 250px;
+    max-height: 250px;
     height: 100%;
     background: #fff;
     padding: 15px 32px 59px 32px;
@@ -327,55 +333,67 @@ hr {
     text-align: center;
     max-width: 412px;
     width: 100%;
-    min-height: 250px;
-    height: 250px;
+    max-height: 250px;
+    height: 100%;
     background: #fff;
     padding: 15px 32px 59px 32px;
     box-sizing: border-box;
 }
-.adventages-item-container:hover,
+/* .adventages-item-container:hover,
 .adventages-row-container:hover {
     max-width: 424px;
     width: 100%;
     max-height: 250px;
     height: 100%;
     box-sizing: border-box;
-    /* border-left: 1px solid #fff;
-    border-top: 1px solid #fff;
-    width: 35px;
-    height: 35px;
-    border-right: 1px solid #fff;
-    border-top: 1px solid #fff;
-    width: 35px;
-    height: 35px;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    width: 35px;
-    height: 35px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    width: 35px; */
-    height: 35px;
+    background-color: #4f8ff0;
+    color: #fff;
+} */
+/* .adventages-row-container:hover {
     background: #4f8ff0;
-    /* color: #fff; */
-}
+
+} */
 
 .adventages-item-icon {
     margin-top: 50px;
     box-sizing: border-box;
 }
 .adventages-item-icon:hover {
+    background-color: #4f8ff0;
+    min-width: 424px;
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 32px 59px 32px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.adventages-item-icon:hover > svg path {
+    padding-top: 50px;
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+}
+.adventages-item-icon:hover > .adventages-item-title {
+    color: #fff;
+} 
+.adventages-item-icon:hover .adventages-item-desc {
+    color: #fff;
+}
+/* .adventages-item-icon:hover {
     max-width: 424px;
     max-height: 250px;
     color: #fff;
     background: #4f8ff0;
     margin: 20px 32px 20px 20px;
-    border-left: 1px solid #fff;
-    border-top: 1px solid #fff;
-}
-.adventages-item-icon imgs :hover {
-    color: #fff;
-}
+    border: 1px solid #fff;
+    border-width: 35px;
+} */
 .adventages-item-title {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 800;
@@ -412,6 +430,11 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 48px 896px 88px 886px;
+    margin: -30px 896px 88px 886px;
     box-sizing: border-box;
+}
+.all-services:hover {
+    background-color: #fff;
+    border: 1px solid #4f8ff0;
+    color: #4f8ff0;
 }
