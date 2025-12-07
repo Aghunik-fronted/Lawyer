@@ -327,13 +327,12 @@ hr {
 }
 .adventages-item-container:hover,
 .adventages-row-container:hover {
-    padding: 50px 32px;
     max-width: 424px;
     width: 100%;
-    min-height: 250px;
+    max-height: 250px;
     height: 100%;
     box-sizing: border-box;
-    border-left: 1px solid #fff;
+    /* border-left: 1px solid #fff;
     border-top: 1px solid #fff;
     width: 35px;
     height: 35px;
@@ -347,15 +346,24 @@ hr {
     height: 35px;
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
-    width: 35px;
+    width: 35px; */
     height: 35px;
     background: #4f8ff0;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .adventages-item-icon {
     margin-top: 50px;
     box-sizing: border-box;
+}
+.adventages-item-icon:hover {
+    max-width: 424px;
+    max-height: 250px;
+    color: #fff;
+    background: #4f8ff0;
+    margin: 20px 32px 20px 20px;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
 }
 .adventages-item-icon imgs :hover {
     color: #fff;
