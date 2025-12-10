@@ -339,7 +339,7 @@ hr {
     padding: 15px 32px 59px 32px;
     box-sizing: border-box;
 }
-/* .adventages-item-container:hover,
+.adventages-item-container:hover,
 .adventages-row-container:hover {
     max-width: 424px;
     width: 100%;
@@ -348,41 +348,67 @@ hr {
     box-sizing: border-box;
     background-color: #4f8ff0;
     color: #fff;
-} */
-/* .adventages-row-container:hover {
-    background: #4f8ff0;
-
-} */
+    padding: 15px 32px 59px 32px;
+}
 
 .adventages-item-icon {
     margin-top: 50px;
     box-sizing: border-box;
 }
-.adventages-item-icon:hover {
-    background-color: #4f8ff0;
-    min-width: 424px;
+.adventages-item-container:hover > .adventages-item-icon {
+     background-color: #4f8ff0;
+    min-width: 372px;
     width: 100%;
-    min-height: 250px;
+    min-height: 210px;
     height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 32px 59px 32px;
     transition: all 0.3s ease;
     cursor: pointer;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
 }
-.adventages-item-icon:hover > svg path {
+.adventages-row-container:hover > .adventages-item-icon {
+    background-color: #4f8ff0;
+    min-width: 372px;
+    width: 100%;
+    min-height: 210px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.adventages-item-container:hover > .adventages-item-icon > svg path {
     padding-top: 50px;
     width: 35px;
     height: 35px;
     fill: #fff;
 }
-.adventages-item-icon:hover > .adventages-item-title {
+.adventages-row-container:hover > .adventages-item-icon > svg path {
+    padding-top: 50px;
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+}
+.adventages-item-container:hover > .adventages-item-icon > .adventages-item-title {
+    color: #fff;
+}
+.adventages-row-container:hover > .adventages-item-icon > .adventages-item-title {
     color: #fff;
 } 
-.adventages-item-icon:hover .adventages-item-desc {
+.adventages-item-container:hover > .adventages-item-icon .adventages-item-desc {
+    color: #fff;
+}
+.adventages-row-container:hover > .adventages-item-icon .adventages-item-desc {
     color: #fff;
 }
 /* .adventages-item-icon:hover {
@@ -520,6 +546,11 @@ hr {
     align-items: center;
     justify-content: center;
 }
+.link-item:hover {
+    background-color: #fff;
+    border: 1px solid #4f8ff0;
+    color: #4f8ff0;
+}
 .link-row {
     max-width: 161px;
     max-height: 49px;
@@ -538,6 +569,11 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.link-row:hover {
+    background: #b4b4b4;
+    border: 1px solid #000000;
+    color: #000;
 }
 .box-item {
     max-width: 535px;
