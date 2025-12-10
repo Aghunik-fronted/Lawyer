@@ -359,7 +359,7 @@ hr {
      background-color: #4f8ff0;
     min-width: 372px;
     width: 100%;
-    min-height: 210px;
+    max-height: 210px;
     height: 100%;
     box-sizing: border-box;
     display: flex;
@@ -375,7 +375,7 @@ hr {
     background-color: #4f8ff0;
     min-width: 372px;
     width: 100%;
-    min-height: 210px;
+    max-height: 210px;
     height: 100%;
     box-sizing: border-box;
     display: flex;
@@ -386,6 +386,7 @@ hr {
     cursor: pointer;
     border-left: 1px solid #fff;
     border-top: 1px solid #fff;
+    /* padding-left: 12px; */
 }
 .adventages-item-container:hover > .adventages-item-icon > svg path {
     padding-top: 50px;
@@ -405,10 +406,22 @@ hr {
 .adventages-row-container:hover > .adventages-item-icon > .adventages-item-title {
     color: #fff;
 } 
-.adventages-item-container:hover > .adventages-item-icon .adventages-item-desc {
+.adventages-item-container:hover > .adventages-item-icon > .adventages-item-desc {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
     color: #fff;
 }
-.adventages-row-container:hover > .adventages-item-icon .adventages-item-desc {
+.adventages-row-container:hover > .adventages-item-icon > .adventages-item-desc {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
     color: #fff;
 }
 /* .adventages-item-icon:hover {
