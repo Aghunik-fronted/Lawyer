@@ -110,6 +110,10 @@ body {
     max-height: 42px;
     margin: 0;
 }
+.law a {
+    text-decoration: none;
+    color: #4f8ff0;
+}
 .law-comp {
     font-weight: 900;
     font-size: 20px;
@@ -278,9 +282,7 @@ hr {
     margin-bottom: 48px;
 }
 .adventages {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -288,11 +290,8 @@ hr {
     margin-bottom: 48px;
 }
 .adventages-item {
-    display: flex; 
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1320px;
     max-height: 538px;
     gap: 24px;
