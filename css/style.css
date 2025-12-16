@@ -4,7 +4,7 @@ body {
     font-family: "Nunito Sans", sans-serif;
 }
 .header {
-    background: url(../images/Rectangle\ 3.png);
+    background: url(../images/Rectangle-3.png);
     background-repeat: no-repeat;
     display: flex;
     max-width: 1920px;
@@ -109,6 +109,10 @@ body {
     padding: 0;
     max-height: 42px;
     margin: 0;
+}
+.law a {
+    text-decoration: none;
+    color: #4f8ff0;
 }
 .law-comp {
     font-weight: 900;
@@ -278,9 +282,7 @@ hr {
     margin-bottom: 48px;
 }
 .adventages {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -288,11 +290,8 @@ hr {
     margin-bottom: 48px;
 }
 .adventages-item {
-    display: flex; 
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1320px;
     max-height: 538px;
     gap: 24px;
@@ -329,6 +328,14 @@ hr {
     padding: 50px 32px 59px 20px;
     box-sizing: border-box;
 }
+.adventages-item-container svg path {
+    margin: 0;
+    padding: 0;
+}
+.adventages-row-container svg path {
+    margin: 0;
+    padding: 0;
+}
 .adventages-item-container:hover,
 .adventages-row-container:hover {
     max-width: 424px;
@@ -341,7 +348,7 @@ hr {
     padding: 50px 32px 59px 20px;
 }
 .adventages-item-container:hover > .adventages-item-icon {
-    background: url(../images/Hover\ border.png);
+    background: url(../images/Hover-border.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -357,11 +364,11 @@ hr {
     align-items: center;
     cursor: pointer;
     padding: 0;
-    padding: 0 12px;
     margin: 0;
+    transition: all 0.3s ease-in;
 }
 .adventages-row-container:hover > .adventages-item-icon {
-    background: url(../images/Hover\ border.png);
+    background: url(../images/Hover-border.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -377,8 +384,8 @@ hr {
     align-items: center;
     cursor: pointer;
     padding: 0;
-    padding: 0 12px;
     margin: 0;
+    transition: all 0.3s ease-in;
 }
 .adventages-item-container:hover > .adventages-item-icon > svg path {
     padding-top: 50px;
@@ -389,6 +396,7 @@ hr {
 }
 .adventages-row-container:hover > .adventages-item-icon > svg path {
     padding-top: 50px;
+    padding-bottom: 15px;
     width: 35px;
     height: 35px;
     fill: #fff;
@@ -402,20 +410,20 @@ hr {
     margin: 0;
 } 
 .adventages-item-container:hover > .adventages-item-icon > .adventages-item-desc {
-    color: #fff;
     font-size: 16px;
     line-height: 120%;
     text-align: center;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 .adventages-row-container:hover > .adventages-item-icon > .adventages-item-desc {
-    color: #fff;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     text-align: center;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 .adventages-item-title {
     font-weight: 800;
@@ -424,12 +432,18 @@ hr {
     text-align: center;
     color: #222;
     white-space: nowrap;
+    padding: 15px 0 10px;
+    margin: 0;
+    box-sizing: border-box;
 }
 .adventages-item-desc {
     font-size: 14px;
     line-height: 120%;
     text-align: center;
     color: #222;
+    margin: 0;
+    padding: 0 12px;
+    box-sizing: border-box;
 }
 .all-services {
     background: #4f8ff0;
@@ -625,14 +639,99 @@ hr {
     margin: 0;
     padding: 24px 0 48px;
  }
+ .wrapper-desc-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+ }
+ .wrapper-row-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 312px;
+    width: 100%;
+    min-height: 414px;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+ }
+ .wrapper-row-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: url(../images/Group-5.png);
+    background-repeat: no-repeat;
+    max-width: 265px;
+    width: 100%;
+    min-height: 374px;
+    height: 100%;
+    padding: 63px 0 64px 0;
+    box-sizing: border-box;
+    margin: 0;
+ }
+ .wrapper-row-desc:hover {
+    opacity: 1;
+    background: #fff;
+    transition: all  0.3s ease-out;
+ }
+
  .wrapper-item-desc {
     max-width: 312px;
     width: 100%;
     min-height: 414px;
     box-shadow: 2px 2px 12px 0 rgba(33, 33, 33, 0.12);
     background: #fff;
-    padding: 0px 0px 24px;
+    min-width: 265px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ }
+ .name-row {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #222;
+    padding: 10px;
     box-sizing: border-box;
+    margin: 0;
+    white-space: nowrap;
+ }
+ .law-row {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #222;
+    margin: 0;
+ }
+ .text-row-desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+    padding: 40px 0;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 265px;
+    width: 100%;
+ }
+ .row-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #222;
+    padding: 0 16px;
+    box-sizing: border-box;
+    margin: 0;
  }
  .img-item {
     max-width: 312px;
@@ -640,6 +739,7 @@ hr {
     max-height: 320px;
     height: 100%;
     margin-bottom: 24px;
+    margin: 0;
  }
  .name-item {
     font-weight: 700;
@@ -851,36 +951,83 @@ hr {
     display: inline-block;
     overflow: hidden;
  }
- /* .image-container::after:hover {
-    background: rgba(79, 143, 240, 0.4);
- } */
  .section-item-img {
     display: block;
     max-width: 424px;
     max-height: 270px;
+    z-index: 1;
  }
- .image-container:before .section-item-image {
+ .layer {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+ }
+ .image-container:hover .layer {
+    opacity: 1;
+    cursor: pointer;
+ }
+ .image-container .section-item-image {
     position: absolute;
     top: 0;
     left: 0;
     max-width: 424px;
+    width: 100%;
     min-height: 270px;
+    height: 100%;
     background: rgba(79, 143, 240, 0.4);
+    opacity: 0;
     z-index: 2;
-    opacity: 1;
  }
-  .image-container:hover .section-item-image{
-    /* position: absolute;
-    top: 0;
-    left: 20px;
-    background-image: url(../images/Hover\ border.png);
-    background: rgba(79, 143, 240, 0.4);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat; */
+/* .image-container:hover .section-item-image{
     cursor: pointer;
     opacity: 1;
+    transition: all 0.3s ease-out;
+ } */
+ .image-container > .section-item-border {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: url(../images/Hover-border.png);
+    background-repeat: no-repeat;
+    opacity: 0;
+    max-width: 372px;
+    width: 100%;
+    min-height: 230px;
+    height: 100%;
+    z-index: 3;
  }
+ /* .image-container > .section-item-border:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+ } */
+ .image-container > .section-item-line {
+    position: absolute;
+    top: 115px;
+    left: 191.42px;
+    max-width: 41px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    z-index: 4;
+ }
+ .image-container .section-item-eye {
+    position: absolute;
+    top: 125px;
+    left: 201.71px;
+    background: url(../images/show.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 5;
+ }
+ /* .image-container > .section-item-line:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+ } */
  .section-item-title {
     margin: 0;
     padding: 24.5px 0 16px;
