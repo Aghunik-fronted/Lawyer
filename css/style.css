@@ -7,23 +7,30 @@ body {
     background: url(../images/Rectangle-3.png);
     background-repeat: no-repeat;
     display: flex;
+    flex: 1;
     max-width: 1920px;
     width: 100%;
     min-height: 854px;
-    height: 100%;
-    margin: 38px auto 24px;
+    margin: 0 auto;
+    margin-top: 34px;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #fff;
 }
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color:rgba(34, 34, 34, 0.64);
     background-repeat: no-repeat;
     max-width: 1920px;
     width: 100%;
-    min-height: 820px;
-    height: 100%;
+    max-height: 820px;
+    min-height: 100%;
     margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 .contacts {
     position: absolute;
@@ -39,8 +46,17 @@ body {
     align-items: center;
     margin: 0;
     padding: 16px 300px;
+    gap: 48px;
     box-sizing: border-box;
     white-space: none;
+}
+.contacts-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
 }
 .phone {
     font-optical-sizing: auto;
@@ -53,6 +69,8 @@ body {
     white-space: nowrap;
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .phone img {
     padding-right: 8px;
@@ -66,11 +84,14 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-left: 24px;
-    margin-right: 863px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .email-to img {
-    margin-right: 8px;
+    margin: 0;
+    padding: 0;
+    padding-right: 8px;
 }
 .calling-to {
     font-optical-sizing: auto;
@@ -80,17 +101,22 @@ body {
     color: #4f8ff0;
     text-decoration: none;
     white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .company {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 1920px;
-    max-height: 112px;
-    height: 100%;
+    width: 100%;
+    min-height: 112px;
     background: rgba(1, 1, 1, 0.76);
     margin: 0;
-    gap: 329px;
-    padding: 22px 300px 28px;
+    gap: 16px;
+    padding: 30px 300px 28px;
+    box-sizing: border-box;
 }
 .header-row {
     display: flex;
@@ -98,6 +124,7 @@ body {
     flex-direction: column;
     min-height: 62px;
     margin: 0;
+    padding: 0;
 }
 .law {
     font-weight: 900;
@@ -105,10 +132,11 @@ body {
     line-height: 150%;
     text-transform: uppercase;
     color: #4f8ff0;
-    margin-bottom: 0;
     padding: 0;
+    padding-right: 36px;
     max-height: 42px;
     margin: 0;
+    box-sizing: border-box;
 }
 .law a {
     text-decoration: none;
@@ -131,6 +159,8 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    margin: 0;
+    padding: 0;
 }
 .menu-row {
     max-width: 679px;
@@ -138,6 +168,8 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
 }
 .menu-item {
@@ -167,11 +199,12 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1090px;
-    max-height: 193px;
+    min-height: 289px;
     height: 100%;
     gap: 8px;
     margin: 0 auto;
-    padding: 156px 410px 289px 420px;
+    padding: 150px 0 192px;
+    box-sizing: border-box;
 }
 .services-item-row {
     font-weight: 300;
@@ -182,6 +215,7 @@ body {
     text-align: center;
     max-height: 45px;
     margin: 0 auto;
+    padding: 0;
 }
 span {
     display: block;
@@ -191,18 +225,22 @@ span {
     text-transform: uppercase;
     color: #4f8ff0;
     max-height: 84px;
-    height: 100%;
     text-align: center;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .text-item {
     font-size: 20px;
     line-height: 120%;
     text-align: center;
     color: #fff; 
+    min-height: 48px;
+    height: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 38px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
 }
 .service-row {
     font-weight: 900;
@@ -219,7 +257,9 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin: 0 auto;
+    margin-left: 43.5%;
+    padding: 0;
 }
 .services>.service-row:hover {
     background-color: #fff;
@@ -229,11 +269,18 @@ span {
 }
 .icons {
     max-width: 1320px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0 295px 0 305px;
+    margin: 0 auto;
+    gap: 48px;
+    padding: 0;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+.icon-item {
+    padding-right: ;
 }
 .container-row {
     display: flex;
@@ -1148,7 +1195,7 @@ hr {
 }
 .footer-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0;
     padding-bottom: 48px;
     box-sizing: border-box;
@@ -1195,7 +1242,7 @@ hr {
 .footer-main {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: f;
     gap: 16px;
     padding: 48px 0 80px;
     min-height: 345px;
@@ -1210,28 +1257,49 @@ hr {
     align-items: flex-start;
     max-width: 419px;
     min-height: 213px;
+    height: 100%;
     gap: 24px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 .contact__col {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 24px;
     max-width: 419px;
-    /* min-height: 55px;
-    height: 100%; */
+    max-height: 55px;
+    height: 100%;
     padding: 0;
     margin: 0;
+}
+.icon__contacts {
+    max-width: 55px;
+    width: 100%;
+    max-height: 55px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.icon__contacts > .icon__contacts-img {
+    min-width: 55px;
+    width: 100%;
+    min-height: 55px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .contacts-row {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items:flex-start;
     max-height: 55px;
-    padding: 8.5px 64px 8.5px 24px;
     margin: 0;
+    padding: 8.5px 0;
+    padding-right: 64px;
     box-sizing: border-box;
 }
 .footer-service-text {
@@ -1261,7 +1329,9 @@ hr {
 }
 .footer__nav{
     max-width: 312px;
+    width: 100%;
     max-height: 182px;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -1303,6 +1373,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     max-width: 424px;
     width: 100%;
     min-height: 217px;
@@ -1395,4 +1466,65 @@ hr {
 font-size: 14px;
 line-height: 120%;
 color: #fff;
+}
+@media (max-width:1600px) {
+    .header {
+        max-width: 1600px;
+        width: 100%;
+        min-height: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .header .container {
+        max-width: 1600px;
+        width: 100%;
+        min-height: 100%;
+    }
+    .contacts {
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 10%;
+    }
+    .container.company {
+        max-width: 1600px;
+        flex-wrap: wrap;
+    }
+    .header > .menu-row {
+        max-width: 679px;
+        flex-wrap: wrap;
+    }
+
+} 
+@media (max-width:834px) {
+    .header {
+        max-width: 834px;
+        width: 100%;
+        min-height: 581px;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    .header .container {
+        max-width: 100%;
+        min-height: 100%;
+        background-size: cover;
+        padding: 0 69px; 
+        box-sizing: border-box;
+    }
+    .container .company {
+        max-width: 834px;
+        width: 100%;
+        min-height: 84px;
+        padding: 30px 69px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+}
+    .container .menu-row {
+        display: none;
+    }
+
+    
 }
